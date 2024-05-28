@@ -1,0 +1,31 @@
+.outerDiv{
+  background-color: pink;
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+.innerDiv {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.inderDiv-animation{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+
+  
+  
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:20px; top:0px;}
+  50%  { left:20px; top:20px;}
+  75%  { left:0px; top:20px;}
+  100% { left:0px; top:0px;}
+}
