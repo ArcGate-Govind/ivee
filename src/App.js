@@ -1,16 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Carousel from "./component/Carousel";
 
 function App() {
   return (
-   <>
-    <div className='outerDiv' >
-      <div className='innerDiv'>
-          <div className='inderDiv-animation'></div>
-          <div className='inderDiv-animation'></div>
-      </div>
-    </div>
-   </>
+    <>
+      <Carousel />
+    </>
   );
 }
 
