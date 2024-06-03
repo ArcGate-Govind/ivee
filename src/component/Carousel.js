@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
 import "../App.css";
-import { red } from "@mui/material/colors";
 
 const Carousel = () => {
   return (
