@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import Header from "../component/Header";
 
 describe("Header component", () => {
-  test("renders the main title", () => {
+  test("Renders the main title", () => {
     render(<Header />);
     const mainTitle = screen.getByText(
       /Your B2B influencer marketing platform/i
@@ -11,7 +11,7 @@ describe("Header component", () => {
     expect(mainTitle).toBeInTheDocument();
   });
 
-  test("renders the subtitle", () => {
+  test("Renders the subtitle", () => {
     render(<Header />);
     const subtitle = screen.getByText(
       /Partner with your industry experts to grow revenue/i
@@ -19,37 +19,37 @@ describe("Header component", () => {
     expect(subtitle).toBeInTheDocument();
   });
 
-  test("renders the start free trial button", () => {
+  test("Renders the start free trial button", () => {
     render(<Header />);
     const button = screen.getByRole("button", { name: /Start free trial/i });
     expect(button).toBeInTheDocument();
   });
 
-  test("renders average views section", () => {
+  test("Renders average views section", () => {
     render(<Header />);
     const averageViews = screen.getByText(/Average views/i);
     expect(averageViews).toBeInTheDocument();
   });
 
-  test("renders average likes section", () => {
+  test("Renders average likes section", () => {
     render(<Header />);
     const averageLikes = screen.getByText(/Average likes/i);
     expect(averageLikes).toBeInTheDocument();
   });
 
-  test("renders average comments section", () => {
+  test("Renders average comments section", () => {
     render(<Header />);
     const averageComments = screen.getByText(/Average comments/i);
     expect(averageComments).toBeInTheDocument();
   });
 
-  test("renders demand generation section", () => {
+  test("Renders demand generation section", () => {
     render(<Header />);
     const demandGeneration = screen.getByText(/#demandgeneration/i);
     expect(demandGeneration).toBeInTheDocument();
   });
 
-  test("renders CRO section", () => {
+  test("Renders CRO section", () => {
     render(<Header />);
     const CROText = screen.getByText(
       /Conversion Rate Optimisation & Personalisation, with Diego Sanders/i
@@ -57,7 +57,7 @@ describe("Header component", () => {
     expect(CROText).toBeInTheDocument();
   });
 
-  test("renders search box", () => {
+  test("Renders search box", () => {
     render(<Header />);
     const searchText = screen.getByText(
       /What topic is your audience interested in?/i
