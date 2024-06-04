@@ -1,10 +1,12 @@
 /* styles.css */
-body{
-  background-color: gray;
+body {
+  background-color: #e8e8e8;
+  margin: 0;
+  padding: 0;
 }
 .scroll-container {
   width: 100%;
-  height:100px;
+  height: 100px;
   overflow: hidden;
   position: relative;
   border-radius: 64px;
@@ -17,7 +19,7 @@ body{
 
 .scrolling-image {
   position: absolute;
-  height:40px; 
+  height: 40px;
   animation: scrollHorizontal 60s linear infinite;
 }
 
@@ -27,5 +29,297 @@ body{
   }
   100% {
     left: 100%;
+  }
+}
+
+.custom-container {
+  background-color: #ffffff;
+  border-radius: 64px;
+  gap: 20px;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.custom-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(100px);
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.gradient {
+  background-image: url("./images/download.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.typographyHeading {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.custom-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.custom-container p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #888;
+}
+
+.custom-container .MuiButton-containedPrimary {
+  background: radial-gradient(
+    61% 100% at 50% -22%,
+    rgb(189, 158, 255) 0%,
+    rgb(149, 99, 255) 100%
+  );
+  color: #ffffff;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 16px;
+  text-transform: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1px inset,
+    rgba(255, 255, 255, 0.08) 0px 0px 0px 2px inset,
+    rgba(0, 0, 0, 0.25) 0px -3px 0px 0px inset,
+    rgba(0, 0, 0, 0.2) 0px 4px 6px -3px;
+}
+
+.custom-container .MuiButton-containedPrimary:hover {
+  background: radial-gradient(
+    61% 100% at 50% -22%,
+    rgb(157, 125, 227) 0%,
+    rgb(125, 80, 222) 100%
+  );
+}
+
+.averageViews {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 100px;
+  top: 250px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4.78043% / 24.4898%;
+  box-shadow: rgba(0, 0, 0, 0.008) 0px 2.76726px 2.21381px 0px,
+    rgba(0, 0, 0, 0.01) 0px 6.6501px 5.32008px 0px,
+    rgba(0, 0, 0, 0.016) 0px 12.5216px 10.0172px 0px,
+    rgba(0, 0, 0, 0.02) 0px 22.3363px 17.869px 0px,
+    rgba(0, 0, 0, 0.02) 0px 41.7776px 33.4221px 0px,
+    rgba(0, 0, 0, 0.03) 0px 100px 80px 0px;
+  transform: translateX(-50%);
+  padding: 10px 10px;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.averageViewsGraph {
+  display: flex;
+  align-items: center;
+  padding: 3px 5px;
+  margin-left: 0.5rem;
+}
+
+.demandGeneration {
+  left: 100px;
+  position: absolute;
+  top: -65px;
+  width: 334px;
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.demandGenerationFrame {
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-50%);
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.008) 0px 2.76726px 2.21381px 0px,
+    rgba(0, 0, 0, 0.01) 0px 6.6501px 5.32008px 0px,
+    rgba(0, 0, 0, 0.016) 0px 12.5216px 10.0172px 0px,
+    rgba(0, 0, 0, 0.02) 0px 22.3363px 17.869px 0px,
+    rgba(0, 0, 0, 0.02) 0px 41.7776px 33.4221px 0px,
+    rgba(0, 0, 0, 0.03) 0px 100px 80px 0px;
+  align-content: flex-start;
+  align-items: flex-start;
+  top: 200px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  left: 90%;
+  padding: 0px 0px 15px 15px;
+  position: absolute;
+  width: 300px;
+}
+
+.ericaFrame {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+.boxErica {
+  width: 20%;
+  border-radius: 12px;
+}
+
+.erica {
+  display: block;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.linkedinFrame {
+  border-radius: 5px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px;
+}
+
+.boxLinkedin {
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 13%;
+}
+
+.linkedin {
+  display: block;
+  width: 8%;
+  border-radius: inherit;
+  position: absolute;
+  bottom: 0;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px;
+}
+
+.demandGenerationHeading h6 {
+  font-weight: 600;
+}
+
+.demandGenerationContent2 {
+  opacity: 1;
+  transform: rotate(8deg);
+}
+
+.tagBg {
+  background-color: rgb(224, 209, 255);
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.18) 1px 3px 2px -2px;
+  transform: none;
+  padding: 0.75rem 1rem;
+  margin-left: 12rem;
+}
+
+.tagText {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  color: rgb(103, 62, 188);
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  font-weight: 600;
+}
+
+.CRO {
+  display: block;
+  position: absolute;
+  background-color: white;
+  border-radius: 25px;
+  width: 15%;
+  bottom: 6%;
+  left: 22%;
+  box-shadow: rgba(0, 0, 0, 0.008) 0px 2.76726px 2.21381px 0px,
+    rgba(0, 0, 0, 0.01) 0px 6.6501px 5.32008px 0px,
+    rgba(0, 0, 0, 0.016) 0px 12.5216px 10.0172px 0px,
+    rgba(0, 0, 0, 0.02) 0px 22.3363px 17.869px 0px,
+    rgba(0, 0, 0, 0.02) 0px 41.7776px 33.4221px 0px,
+    rgba(0, 0, 0, 0.03) 0px 100px 80px 0px;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.CROimage img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.searchBox {
+  background-color: white;
+  width: 20%;
+  border-radius: 25px;
+  padding: 0.5rem;
+  right: 10%;
+  position: absolute;
+  bottom: 15%;
+  box-shadow: rgba(0, 0, 0, 0.008) 0px 2.76726px 2.21381px 0px,
+    rgba(0, 0, 0, 0.01) 0px 6.6501px 5.32008px 0px,
+    rgba(0, 0, 0, 0.016) 0px 12.5216px 10.0172px 0px,
+    rgba(0, 0, 0, 0.02) 0px 22.3363px 17.869px 0px,
+    rgba(0, 0, 0, 0.02) 0px 41.7776px 33.4221px 0px,
+    rgba(0, 0, 0, 0.03) 0px 100px 80px 0px;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.searchBox img {
+  padding-left: 1rem;
+}
+
+@media (max-width: 1194px) {
+  .searchBox,
+  .averageViews,
+  .CRO {
+    display: none;
+  }
+
+  .typography-1 {
+    width: 100%;
+  }
+
+  .demandGeneration {
+    order: 1;
+    margin-top: 20px;
+    bottom: 30%;
+    top: unset;
+    left: 20%;
+  }
+
+  .demandGenerationFrame {
+    position: static;
+    transform: translate(-40px, 180px);
+    gap: 5px;
+    width: fit-content;
+  }
+
+  .tagBg {
+    transform: translate(20px, -20px);
+  }
+
+  .tagText {
+    font-size: 18px;
   }
 }
