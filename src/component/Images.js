@@ -1,5 +1,3 @@
-
-  
 import search from "../images/search.png";
 import Erica from "../images/Erica_Blend.webp";
 import LinkedIn from "../images/linkedin.avif";
@@ -11,7 +9,7 @@ import innovationTag from "../images/innovationTag.avif";
 import reDo from "../images/reDo.avif";
 import spinner from "../images/spinner.gif";
 
- export default {
+export default {
   search,
   Erica,
   LinkedIn,
@@ -21,5 +19,5 @@ import spinner from "../images/spinner.gif";
   innovation,
   innovationTag,
   reDo,
-  spinner
- }
+  spinner,
+};
