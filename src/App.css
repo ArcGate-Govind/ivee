@@ -53,11 +53,12 @@ body {
 }
 
 .gradient {
-  background-image: url("./images/download.svg");
+  background-image: url("./images/gradient.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
+  opacity: 0.4;
 }
 
 .typographyHeading {
@@ -321,5 +322,139 @@ body {
 
   .tagText {
     font-size: 18px;
+  }
+}
+
+.sectionHeading {
+  background-color: rgb(224, 209, 255);
+  border-radius: 25px;
+  width: fit-content;
+  color: rgb(103, 62, 188) !important;
+  padding: 5px 12px 5px 12px;
+}
+
+.heading2 {
+  width: 40%;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.headingSpan {
+  width: 35%;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 17px !important;
+}
+
+.gradient2 {
+  background-image: url("./images/gradient2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.searchBar {
+  width: 20%;
+  display: flex;
+  background-color: rgba(41, 38, 46, 0.03);
+  opacity: 1;
+  border-radius: 32px;
+  padding: 16px 56px 16px 16px;
+  align-items: center;
+  filter: blur(0);
+}
+
+.searchBar img {
+  width: 5%;
+  padding: 0 0.75rem;
+}
+
+.searchBar p {
+  color: #333;
+  font-size: 15px;
+}
+
+.searchResults {
+  width: 35%;
+}
+
+.searchResultBlock {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.008) 0px 2.76726px 2.21381px 0px,
+    rgba(0, 0, 0, 0.01) 0px 6.6501px 5.32008px 0px,
+    rgba(0, 0, 0, 0.016) 0px 12.5216px 10.0172px 0px,
+    rgba(0, 0, 0, 0.02) 0px 22.3363px 17.869px 0px,
+    rgba(0, 0, 0, 0.02) 0px 41.7776px 33.4221px 0px,
+    rgba(0, 0, 0, 0.03) 0px 100px 80px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+  background-image: none;
+  opacity: 1;
+  padding: 8px 15px;
+  border-radius: 15px;
+  filter: blur(0);
+  animation: slideUp 1s ease-out forwards;
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+.resultDetail {
+  justify-content: end;
+  flex-grow: 1;
+  display: flex;
+}
+
+.searchImages {
+  position: relative;
+  display: inline-block;
+  width: 10%;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.linkedin-icon {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  width: 35%;
+  border-radius: 25%;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px;
+}
+
+@media (max-width: 1194px) {
+  .heading2 {
+    width: 100%;
+  }
+
+  .headingSpan {
+    width: 100%;
+  }
+
+  .searchBar {
+    width: 50%;
+  }
+
+  .searchResults {
+    width: 55%;
+  }
+
+  .resultDetail {
+    text-align: right;
   }
 }

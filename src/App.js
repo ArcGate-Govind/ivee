@@ -1,4 +1,5 @@
 import Carousel from "./component/Carousel";
+import DemandGeneration from "./component/DemandGeneration";
 import Header from "./component/Header";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <Carousel />
+      <DemandGeneration />
     </>
   );
 }
