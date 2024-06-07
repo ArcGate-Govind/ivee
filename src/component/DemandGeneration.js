@@ -1,15 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import search from "../images/search.png";
-import Erica from "../images/Erica_Blend.webp";
-import LinkedIn from "../images/linkedin.avif";
-import makerPlace from "../images/makerPlace.avif";
-import youTube from "../images/youTube.avif";
-import hannah from "../images/hannah.avif";
-import innovation from "../images/innovationCorner.avif";
-import innovationTag from "../images/innovationTag.avif";
-import reDo from "../images/reDo.avif";
-import spinner from "../images/spinner.gif";
+import Images from "./Images";
 
 const DemandGeneration = () => {
   const [currentText, setCurrentText] = useState("");
@@ -79,9 +70,9 @@ const DemandGeneration = () => {
       <Box className="search">
         <Box className="searchBar">
           {showSpinner ? (
-            <img src={spinner} alt="spinner" />
+            <img src={Images.spinner} alt="spinner" />
           ) : (
-            <img src={search} alt="search" />
+            <img src={Images.search} alt="search" />
           )}
           <Typography>{currentText}</Typography>
         </Box>
@@ -89,8 +80,8 @@ const DemandGeneration = () => {
           <Box className="searchResults" mt={3}>
             <Box className="searchResultBlock">
               <Box className="searchImages">
-                <img src={Erica} alt="erica" className="profile-image" />
-                <img src={LinkedIn} alt="linkedin" className="linkedin-icon" />
+                <img src={Images.Erica} alt="erica" className="profile-image" />
+                <img src={Images.LinkedIn} alt="linkedin" className="linkedin-icon" />
               </Box>
               <Box className="resultTitles">
                 <Typography>
@@ -108,11 +99,11 @@ const DemandGeneration = () => {
             <Box className="searchResultBlock" mt={2}>
               <Box className="searchImages">
                 <img
-                  src={makerPlace}
+                  src={Images.makerPlace}
                   alt="makerPlace"
                   className="profile-image"
                 />
-                <img src={youTube} alt="youTube" className="linkedin-icon" />
+                <img src={Images.youTube} alt="youTube" className="linkedin-icon" />
               </Box>
               <Box className="resultTitles">
                 <Typography>
@@ -129,8 +120,8 @@ const DemandGeneration = () => {
 
             <Box className="searchResultBlock" mt={2}>
               <Box className="searchImages">
-                <img src={hannah} alt="hannah" className="profile-image" />
-                <img src={LinkedIn} alt="linkedin" className="linkedin-icon" />
+                <img src={Images.hannah} alt="hannah" className="profile-image" />
+                <img src={Images.LinkedIn} alt="linkedin" className="linkedin-icon" />
               </Box>
               <Box className="resultTitles">
                 <Typography>
@@ -146,12 +137,12 @@ const DemandGeneration = () => {
             <Box className="searchResultBlock blur" mt={2}>
               <Box className="searchImages">
                 <img
-                  src={innovation}
+                  src={Images.innovation}
                   alt="innovation"
                   className="profile-image"
                 />
                 <img
-                  src={innovationTag}
+                  src={Images.innovationTag}
                   alt="innovation"
                   className="linkedin-icon"
                 />
@@ -169,8 +160,8 @@ const DemandGeneration = () => {
 
             <Box className="searchResultBlock blur" mt={2}>
               <Box className="searchImages">
-                <img src={reDo} alt="reDo" className="profile-image" />
-                <img src={LinkedIn} alt="linkedin" className="linkedin-icon" />
+                <img src={Images.reDo} alt="reDo" className="profile-image" />
+                <img src={Images.LinkedIn} alt="linkedin" className="linkedin-icon" />
               </Box>
               <Box className="resultTitles">
                 <Typography>
